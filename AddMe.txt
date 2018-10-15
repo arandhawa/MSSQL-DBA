@@ -1,0 +1,10 @@
+USE [master]
+GO
+CREATE LOGIN [NA\RandhawA] FROM WINDOWS WITH DEFAULT_DATABASE=[master]
+GO
+EXEC master..sp_addsrvrolemember @loginame = N'NA\RandhawA', @rolename = N'sysadmin'
+GO
+CREATE LOGIN [NA\adm arslan randhawa] FROM WINDOWS WITH DEFAULT_DATABASE=[master]
+GO
+EXEC master..sp_addsrvrolemember @loginame = N'NA\adm arslan randhawa', @rolename = N'sysadmin'
+GO
